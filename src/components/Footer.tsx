@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="flex justify-between items-center">
     
                     <p className="text-sm">
-                        &copy; {new Date().getFullYear()} Sua Empresa. Todos os direitos reservados.
+                        &copy; {new Date().getFullYear()} Galvani. Todos os direitos reservados.
                     </p>
                     
                     <div className="flex space-x-6">
