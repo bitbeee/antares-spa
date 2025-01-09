@@ -9,7 +9,7 @@ import Services from "@/components/Service";
 export default function Home() {
   return (
    <>
-   <Header/>
+   <Header isAntaresPage={false}/>
    <Carousel/>
    <About/>
    <Services/>
