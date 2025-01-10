@@ -96,7 +96,7 @@ export default function Antares() {
 
       <section className="relative bg-red-700 h-[500px]">
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h2 className="text-5xl font-extrabold text-center text-white mb-12">NOSSOS SERVIÇOS</h2>
+          <h2 className="text-3xl font-extrabold text-center text-white mb-12">NOSSOS SERVIÇOS</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-screen-lg">
             {services.map((service, index) => (
               <div key={index} className="bg-white bg-opacity-75 shadow-md rounded-lg p-6 text-center transform transition-transform duration-300 hover:scale-105">
