@@ -27,11 +27,9 @@ export default function Header({ isAntaresPage }: HeaderProps) {
               />
             </Link>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
-            <div>
-              <span className="text-white">Telefone: (11) 1234-5678</span>
-              <span className="text-white">Email: contato@e-control.com</span>
-            </div>
+          <div className="hidden md:grid items-center gap-2 p-4">
+            <span className="text-white">Telefone: (11) 1234-5678</span>
+            <span className="text-white">Email: contato@e-control.com</span>
           </div>
           <div className="md:hidden flex items-center ml-auto">
             <button

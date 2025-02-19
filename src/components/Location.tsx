@@ -49,13 +49,20 @@ export default function Location() {
   };
 
   return (
-    <section className="bg-white mt-8 mb-10" id="location">
+    <section className="bg-white mt-8  w-full" id="location">
       <div className="sm:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <h2 className="text-3xl font-extrabold text-center text-black mb-12">
           ONDE ESTAMOS
         </h2>
+        <div className="w-full h-92 rounded-lg">
+          <img
+            src="mapa.png"
+            alt="Imagem da localização"
+            className="w-full md:w-1/3 h-full object-cover rounded-lg m-auto"
+          />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="w-full h-auto bg-gray-200 rounded-lg p-8">
+          <div className="w-full h-auto rounded-lg p-8 my-auto">
             <h1 className="text-black text-3xl font-semibold text-center mb-8">
               Entre em contato com o nosso time!
             </h1>
@@ -91,7 +98,7 @@ export default function Location() {
               </label>
               <button
                 type="submit"
-                className="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition duration-300"
+                className="w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition duration-300 font-bold uppercase"
                 disabled={loading}
               >
                 {loading ? "Enviando..." : "Enviar"}
@@ -104,12 +111,11 @@ export default function Location() {
               <p className="text-center text-black mt-4">{message}</p>
             )}
           </div>
-
-          <div className="w-full h-92 bg-gray-300 rounded-lg">
+          <div className="w-full h-92 rounded-lg">
             <img
-              src="mapa.png"
+              src="telemarketing.png"
               alt="Imagem da localização"
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-1/8 object-cover rounded-lg hidden md:block"
             />
           </div>
         </div>
