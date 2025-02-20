@@ -15,19 +15,20 @@ export default function Header({ isAntaresPage }: HeaderProps) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-red-700 text-white">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-red-700 text-white py-4 md:py-0">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+        <div className="flex items-center justify-between ">
+          <div className="flex flex-1">
             <Link href={"/"}>
+              {/*  eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo.png"
                 alt="E-CONTROL Logo"
-                className="h-10 w-auto sm:h-16 sm:mt-6"
+                className="h-10 w-auto sm:h-16 sm:mt-auto"
               />
             </Link>
           </div>
-          <div className="hidden md:grid items-center gap-2 p-4">
+          <div className="hidden md:flex md:flex-col items-end gap-2 p-4 my-auto h-full flex-1">
             <span className="text-white">Telefone: (11) 1234-5678</span>
             <span className="text-white">Email: contato@e-control.com</span>
           </div>
@@ -71,10 +72,9 @@ export default function Header({ isAntaresPage }: HeaderProps) {
             </button>
           </div>
         </div>
-
-        <div className="flex items-center justify-center sm:bg-red-700 h-16 rounded-t-lg">
+        <div className="flex items-center justify-center sm:bg-red-700  rounded-t-lg">
           <div className="hidden sm:block">
-            <div className="ml-4 flex items-center space-x-4">
+            <div className="ml-4 flex items-center space-x-4 h-16">
               <Link
                 href="#about"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
@@ -86,12 +86,6 @@ export default function Header({ isAntaresPage }: HeaderProps) {
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
               >
                 SERVIÇOS
-              </Link>
-              <Link
-                href="#location"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
-              >
-                ONDE ESTAMOS
               </Link>
               <Link
                 href="#location"

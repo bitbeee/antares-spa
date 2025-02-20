@@ -49,18 +49,8 @@ export default function Location() {
   };
 
   return (
-    <section className="bg-white mt-8  w-full" id="location">
-      <div className="sm:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        <h2 className="text-3xl font-extrabold text-center text-black mb-12">
-          ONDE ESTAMOS
-        </h2>
-        <div className="w-full h-92 rounded-lg">
-          <img
-            src="mapa.png"
-            alt="Imagem da localização"
-            className="w-full md:w-1/3 h-full object-cover rounded-lg m-auto"
-          />
-        </div>
+    <section className="bg-gray-200 mt-8  w-full " id="location">
+      <div className="md:w-4/5 mx-auto  mt-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="w-full h-auto rounded-lg p-8 my-auto">
             <h1 className="text-black text-3xl font-semibold text-center mb-8">
@@ -68,18 +58,18 @@ export default function Location() {
             </h1>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <label className="text-black flex flex-col">
-                Nome Completo:
                 <input
                   type="text"
                   name="nome"
+                  placeholder="Informe seu nome completo"
                   value={formData.nome}
                   onChange={handleChange}
                   className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
                 />
               </label>
               <label className="text-black flex flex-col">
-                Email para contato:
                 <input
+                  placeholder="Qual seu melhor e-mail?"
                   type="email"
                   name="email"
                   value={formData.email}
@@ -88,8 +78,8 @@ export default function Location() {
                 />
               </label>
               <label className="text-black flex flex-col">
-                Mensagem:
                 <textarea
+                  placeholder="Escreva sua mensagem"
                   name="mensagem"
                   value={formData.mensagem}
                   onChange={handleChange}
@@ -111,11 +101,12 @@ export default function Location() {
               <p className="text-center text-black mt-4">{message}</p>
             )}
           </div>
-          <div className="w-full h-92 rounded-lg">
+          <div className="w-full h-full rounded-lg flex">
+            {/*  eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="telemarketing.png"
               alt="Imagem da localização"
-              className="w-full h-1/8 object-cover rounded-lg hidden md:block"
+              className="w-[60%] object-cover rounded-lg hidden md:block"
             />
           </div>
         </div>
