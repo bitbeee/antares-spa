@@ -5,14 +5,14 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-red-700 w-full text-white py-12">
+    <footer className="bg-red-700 w-full text-white py-12 mt-100vh">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex w-full md:w-[40vw] lg:w-[30vw] flex-row justify-center sm:justify-normal">
             <img
               src="/logo.png"
               alt="Galvani Logo"
-              className="h-[10vh] w-[10vw] my-auto"
+              className="h-[10vh] w-[10vw] my-auto hidden md:block"
             />
             <div className="md:grid grid-cols-2 px-4 flex-col  w-full hidden">
               <a href="#about" className="my-auto">
