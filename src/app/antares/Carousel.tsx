@@ -29,24 +29,24 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="w-full mx-auto bg-white hidden sm:block">
-      <Slider {...settings} className="relative">
-        <div className="overflow-hidden shadow-lg relative">
+      <Slider {...settings} className="">
+        <div className="overflow-hidden shadow-lg">
           <img
-            src="img02.jpg"
+            src="antares01.jpg"
             alt="Imagem 1"
             className="w-full h-[70vh] object-cover"
           />
         </div>
         <div className="overflow-hidden shadow-lg relative">
           <img
-            src="img03.jpg"
+            src="antares02.jpg"
             alt="Imagem 2"
             className="w-full h-[70vh] object-cover"
           />
         </div>
         <div className="overflow-hidden shadow-lg relative">
           <img
-            src="img04.jpg"
+            src="antares03.jpg"
             alt="Imagem 3"
             className="w-full h-[70vh] object-cover"
           />

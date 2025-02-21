@@ -15,7 +15,7 @@ export default function Header({ isAntaresPage }: HeaderProps) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-red-700 text-white py-4 md:py-0">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-red-700 text-white py-4 md:py-4">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between ">
           <div className="flex flex-1">
@@ -29,7 +29,7 @@ export default function Header({ isAntaresPage }: HeaderProps) {
             </Link>
           </div>
           <div className="hidden md:flex md:flex-col items-end gap-2 p-4 my-auto h-full flex-1">
-            <span className="text-white">Telefone: (11) 1234-5678</span>
+            <span className="text-white">Telefone: (62) 3328-3838</span>
             <span className="text-white">Email: contato@e-control.com</span>
           </div>
           <div className="md:hidden flex items-center ml-auto">
@@ -77,19 +77,19 @@ export default function Header({ isAntaresPage }: HeaderProps) {
             <div className="ml-4 flex items-center space-x-4 h-16">
               <Link
                 href="#about"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-white hover:scale-110  rounded-lg p-2"
               >
                 SOBRE NÓS
               </Link>
               <Link
                 href="#services"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-white hover:scale-110  rounded-lg p-2"
               >
                 SERVIÇOS
               </Link>
               <Link
                 href="#location"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-white hover:scale-110  rounded-lg p-2"
               >
                 CONTATO
               </Link>
@@ -97,8 +97,8 @@ export default function Header({ isAntaresPage }: HeaderProps) {
                 href="/antares"
                 className={`rounded-lg p-2 ${
                   isAntaresPage
-                    ? "bg-white text-black"
-                    : "text-white hover:bg-white hover:text-black"
+                    ? "bg-white text-black hover:scale-110"
+                    : "text-white hover:scale-110"
                 }`}
               >
                 ANTARES
@@ -122,12 +122,7 @@ export default function Header({ isAntaresPage }: HeaderProps) {
             >
               SERVIÇOS
             </Link>
-            <Link
-              href="#location"
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
-            >
-              ONDE ESTAMOS
-            </Link>
+
             <Link
               href="#location"
               className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
