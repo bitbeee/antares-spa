@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <div className="bg-white w-full flex flex-col items-center  mb-8 mt-[16vh] ">
+    <div className="bg-white w-full flex flex-col items-center  mb-8 mt-[4vh] md:mt-0">
       <div className="flex flex-col md:flex-row items-start justify-between mt-4 bg-white rounded-lg md:w-4/5 w-full p-4 md:p-0">
         <div className="md:w-1/2 pr-0 mt-4 w-full my-auto">
           <h1 className="text-4xl font-extrabold text-black mb-4 md:mb-4">
