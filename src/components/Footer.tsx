@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-6 mt-4 md:mt-0 mb-4 md:mb-0">
             <div className="flex flex-col gap-y-4 justify-start ">
-              <div className="flex space-x-6 items-center mx-auto">
+              <div className="flex space-x-6 items-center md:mx-auto">
                 <a
                   href="https://facebook.com"
                   target="_blank"
@@ -59,7 +59,7 @@ export default function Footer() {
               </div>
               <p className="text-sm text-start  mt-4 md:mt-0">
                 Endereço: Avenida Brasilia, 625 <br />
-                Alvorada, Anapolis <br /> GO, CEP:75.084-677
+                Alvorada, Anapolis GO <br /> CEP:75.084-677
               </p>
             </div>
           </div>

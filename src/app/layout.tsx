@@ -1,3 +1,4 @@
+import StickyWhatsapp from "@/components/StickyWhatsApp";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,6 +40,7 @@ export default function RootLayout({
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} `}>
+        <StickyWhatsapp />
         {children}
       </body>
     </html>

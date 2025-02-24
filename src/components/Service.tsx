@@ -22,7 +22,7 @@ export default function Services() {
   return (
     <section className="" id="services">
       <div className="items-center justify-center flex flex-col">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:w-4/5">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:w-4/5">
           {services.map((service, index) => (
             <div
               key={index}

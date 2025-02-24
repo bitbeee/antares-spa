@@ -50,7 +50,7 @@ export default function Location() {
 
   return (
     <section className="bg-gray-200 mt-8  w-full " id="location">
-      <div className="md:w-4/5 mx-auto  mt-8">
+      <div className="md:w-5/5 lg:w-4/5 mx-auto  mt-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="w-full h-auto rounded-lg p-8 my-auto">
             <h1 className="text-black text-3xl font-semibold text-center mb-8">
@@ -106,7 +106,7 @@ export default function Location() {
             <img
               src="telemarketing.png"
               alt="Imagem da localização"
-              className="w-[60%] object-cover rounded-lg hidden md:block"
+              className="md:w-[100%] lg:w-[90%] xl:w-[80%] object-cover rounded-lg hidden lg:block"
             />
           </div>
         </div>

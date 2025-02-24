@@ -30,7 +30,9 @@ export default function Header({ isAntaresPage }: HeaderProps) {
           </div>
           <div className="hidden md:flex md:flex-col items-end gap-2 p-4 my-auto h-full flex-1">
             <span className="text-white">Telefone: (62) 3328-3838</span>
-            <span className="text-white">Email: contato@e-control.com</span>
+            <span className="text-white">
+              Email: contato@metalurgicagalvani.com.br
+            </span>
           </div>
           <div className="md:hidden flex items-center ml-auto">
             <button
